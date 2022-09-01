@@ -23,5 +23,6 @@
 
         <activity android:name=".NormalActivity" />
         <activity android:name=".WithoutTabActivity" />
+        <activity android:name=".TabActivity" />
     </application>
 </manifest>

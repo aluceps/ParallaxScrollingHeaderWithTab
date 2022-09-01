@@ -24,5 +24,9 @@ class MainActivity : AppCompatActivity() {
         binding.button2.setOnClickListener {
             WithoutTabActivity.start(this)
         }
+
+        binding.button3.setOnClickListener {
+            TabActivity.start(this)
+        }
     }
 }
