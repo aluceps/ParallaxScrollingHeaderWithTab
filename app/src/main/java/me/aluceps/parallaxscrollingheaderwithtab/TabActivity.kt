@@ -15,13 +15,8 @@ class TabActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
-            setDisplayHomeAsUpEnabled(true)
-        }
-        binding.toolbarLayout.apply {
             title = "あいうえお株式会社"
-            titleCollapseMode = TITLE_COLLAPSE_MODE_FADE
-            setExpandedTitleColor(Color.TRANSPARENT)
-            setCollapsedTitleTextColor(Color.BLACK)
+            setDisplayHomeAsUpEnabled(true)
         }
     }
 
