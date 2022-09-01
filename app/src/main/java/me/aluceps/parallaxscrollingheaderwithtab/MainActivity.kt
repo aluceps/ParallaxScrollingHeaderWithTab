@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.button2.setOnClickListener {
-            TabActivity.start(this)
+            WithoutTabActivity.start(this)
         }
     }
 }

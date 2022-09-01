@@ -6,12 +6,12 @@ import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.CollapsingToolbarLayout.TITLE_COLLAPSE_MODE_FADE
-import me.aluceps.parallaxscrollingheaderwithtab.databinding.ActivityTabBinding
+import me.aluceps.parallaxscrollingheaderwithtab.databinding.ActivityWithoutTabBinding
 
-class TabActivity : AppCompatActivity() {
+class WithoutTabActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityTabBinding.inflate(layoutInflater)
+        val binding = ActivityWithoutTabBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
@@ -32,7 +32,7 @@ class TabActivity : AppCompatActivity() {
 
     companion object {
         fun start(context: Context) = context.startActivity(
-            Intent(context, TabActivity::class.java)
+            Intent(context, WithoutTabActivity::class.java)
         )
     }
 }
