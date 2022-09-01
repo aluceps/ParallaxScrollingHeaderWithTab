@@ -11,8 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
-            title = "あいうえお株式会社"
-            setDisplayHomeAsUpEnabled(true)
+            title = "画面選択"
+        }
+        setupView(binding)
+    }
+
+    private fun setupView(binding: ActivityMainBinding) {
+        binding.button1.setOnClickListener {
+            NormalActivity.start(this)
         }
     }
 }

@@ -18,6 +18,11 @@ class NormalActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSupportNavigateUp(): Boolean =
+        onBackPressed().let {
+            true
+        }
+
     companion object {
         fun start(context: Context) = context.startActivity(
             Intent(context, NormalActivity::class.java)
