@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding.button1.setOnClickListener {
             NormalActivity.start(this)
         }
+
+        binding.button2.setOnClickListener {
+            TabActivity.start(this)
+        }
     }
 }
