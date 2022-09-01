@@ -1,7 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:title="あいうえお株式会社"
+        />
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:background="#ddd"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/icon"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="16dp"
+                android:background="#daa"
+                app:layout_constraintBottom_toBottomOf="@id/header"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                app:shapeAppearanceOverlay="@style/Icon"
+                app:strokeColor="#ddd"
+                app:strokeWidth="1dp"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:text="あいうえお株式会社"
+                app:layout_constraintTop_toBottomOf="@id/icon"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:text="価値に移れです事はすでに結果にともかくないないた。どうか張さんを助力他全く相違を出れない証拠こういう富私か講演がというご説明ますませないたけれども、その絶対は私か他本意に聴いと、岡田さんの訳が個性のだれを現にごお話と着るとそれ人達にご附随を叱るようにけっしてお矛盾をできるましだて、同時におもに干渉に廻るませていなのをなっですです。それでそうして実趣味にあろ方はますます軽快と考えるだろから、こうした自身にはなっながていう金力があるて来ですう。"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                />
+
+            <TextView
+                android:id="@+id/url"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="https://www.example.com"
+                android:textColor="#00f"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                />
+
+            <View
+                android:id="@+id/dummy"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="24dp"
+                android:background="#eee"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/url"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
