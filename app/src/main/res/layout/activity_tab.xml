@@ -58,6 +58,7 @@
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="24dp"
                     android:text="@string/header_title"
+                    android:textColor="@color/text_primary"
                     app:layout_constraintTop_toBottomOf="@id/icon"
                     />
 
@@ -69,6 +70,7 @@
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="24dp"
                     android:text="@string/header_description"
+                    android:textColor="@color/text_primary"
                     app:layout_constraintTop_toBottomOf="@id/name"
                     />
 
@@ -81,7 +83,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="24dp"
                     android:text="@string/header_url"
-                    android:textColor="#00f"
+                    android:textColor="@color/text_link"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/description"
                     />
