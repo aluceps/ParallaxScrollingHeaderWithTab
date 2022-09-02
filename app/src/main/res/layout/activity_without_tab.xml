@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="24dp"
-                    android:text="あいうえお株式会社"
+                    android:text="@string/header_title"
                     app:layout_constraintTop_toBottomOf="@id/icon"
                     />
 
@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="24dp"
-                    android:text="価値に移れです事はすでに結果にともかくないないた。どうか張さんを助力他全く相違を出れない証拠こういう富私か講演がというご説明ますませないたけれども、その絶対は私か他本意に聴いと、岡田さんの訳が個性のだれを現にごお話と着るとそれ人達にご附随を叱るようにけっしてお矛盾をできるましだて、同時におもに干渉に廻るませていなのをなっですです。それでそうして実趣味にあろ方はますます軽快と考えるだろから、こうした自身にはなっながていう金力があるて来ですう。"
+                    android:text="@string/header_description"
                     app:layout_constraintTop_toBottomOf="@id/name"
                     />
 
@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="https://www.example.com"
+                    android:text="@string/header_url"
                     android:textColor="#00f"
                     app:layout_constraintTop_toBottomOf="@id/description"
                     />
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 app:layout_collapseMode="pin"
-                tools:title="あいうえお株式会社"
+                tools:title="@string/header_title"
                 />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
